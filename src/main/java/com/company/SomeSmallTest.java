@@ -1,5 +1,6 @@
   package com.company;
 
+  import graphwalker.com.company.SmallTest;
   import org.graphwalker.core.machine.ExecutionContext;
   import org.graphwalker.java.annotation.GraphWalker;
 
@@ -9,7 +10,7 @@
  * Implements the GraphWalker model: src/main/resources/SmallTest.graphml
  * The SmallTest.graphml can be opened and edited using http://www.yworks.com/en/products/yfiles/yed/
  * <p/>
- * For convienicene, a jpg image exists side-by-side in the same folder.
+ * For convenience, a jpg image exists side-by-side in the same folder.
  * <p/>
  * The @GraphWalker annotation, has the following meaning:
  * 1) value defines the generator of this test. Please read more
