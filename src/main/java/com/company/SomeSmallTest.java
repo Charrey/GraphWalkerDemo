@@ -22,36 +22,45 @@
  * running: mvn graphwalker:generate-sources
  * also: mvn graphwalker:test
  */
-@GraphWalker(value = "random(edge_coverage(100))", start = "e_FirstAction")
+@GraphWalker(value = "random(edge_coverage(100))", start = "v_Off")
 public class SomeSmallTest extends ExecutionContext implements SmallTest {
 
-  @Override
-  public void e_FirstAction() {
-    System.out.println("Running: e_FirstAction");
-  }
+    @Override
+    public void v_playSongRhythm() {
+        System.out.println("Bam tss LA LA LA!");
+    }
 
-  @Override
-  public void e_AnotherAction() {
-    System.out.println("Running: e_AnotherAction");
-  }
+    @Override
+    public void v_playRhythm() {
+        System.out.println("Bam tss tss bam tss tss!!!");
+    }
 
-  @Override
-  public void e_SomeAction() {
-    System.out.println("Running: e_SomeAction");
-  }
+    @Override
+    public void e_PlaySong() {
+        System.out.println("Let's sing!");
+    }
 
-  @Override
-  public void e_SomeOtherAction() {
-    System.out.println("Running: e_SomeOtherAction");
-  }
+    @Override
+    public void v_playSong() {
+        System.out.println("La la la la!");
+    }
 
-  @Override
-  public void v_VerifySomeAction() {
-    System.out.println("Running: v_VerifySomeAction");
-  }
+    @Override
+    public void v_Off() {
+        System.out.println("zzz...");
 
-  @Override
-  public void v_VerifySomeOtherAction() {
-    System.out.println("Running: v_VerifySomeOtherAction");
-  }
+    }
+
+    @Override
+    public void e_Off() {
+        System.out.println("Shutting down...");
+
+    }
+
+    @Override
+    public void e_PlayRhythm() {
+        System.out.println("Let's make some noise!!");
+
+    }
+
 }
